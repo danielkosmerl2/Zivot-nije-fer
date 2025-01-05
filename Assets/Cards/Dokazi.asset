@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2ca1278f67a35f479c72881ab8a4be1, type: 3}
-  m_Name: Integriraj
+  m_Name: Dokazi
   m_EditorClassIdentifier: 
-  cardName: Integriraj
-  description: "Napravi 1 ra\u010Dunski bod"
-  artwork: {fileID: 21300000, guid: 6b90a61375bcf9644bd5d3b59a18a4a2, type: 3}
+  cardName: "Doka\u017Ei"
+  description: Napravi 1 teorijski bod
+  artwork: {fileID: 21300000, guid: 173f2484bd1c97f46a95dd4006179481, type: 3}
   cost: 1
