@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: IF-ELSE
   description: Napravi 1 programski bod
-  artwork: {fileID: 21300000, guid: 30dc94bd6dd49cd48bfe3db4dce8e500, type: 3}
+  artwork: {fileID: 21300000, guid: 5451d734074bb7549aa984e92db24e1a, type: 3}
   cost: 1

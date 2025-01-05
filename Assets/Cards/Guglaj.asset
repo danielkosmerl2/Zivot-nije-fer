@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Guglaj
   description: Napravi 1 univerzalni bod
-  artwork: {fileID: 21300000, guid: 30dc94bd6dd49cd48bfe3db4dce8e500, type: 3}
+  artwork: {fileID: 21300000, guid: 2a2e28a8e6085d541a26d1ac698dfc10, type: 3}
   cost: 1
