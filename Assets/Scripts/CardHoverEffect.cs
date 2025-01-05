@@ -18,6 +18,9 @@ public class ButtonHoverAdjust : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        originalScale = transform.localScale; // Store the original scale
+        originalPosition = transform.localPosition; // Store the original position
+        
         transform.localScale = hoverScale; // Scale up
         transform.localPosition = originalPosition + new Vector3(0, hoverOffsetY, 0); // Move up
         transform.SetAsLastSibling(); // Render above other buttons
