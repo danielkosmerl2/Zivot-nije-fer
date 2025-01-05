@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: FOR petlja
   description: Napravi 1 programski bod
-  artwork: {fileID: 21300000, guid: 30dc94bd6dd49cd48bfe3db4dce8e500, type: 3}
+  artwork: {fileID: 21300000, guid: 29a5bb8dc54ba2842ba522b16fa0c056, type: 3}
   cost: 1
