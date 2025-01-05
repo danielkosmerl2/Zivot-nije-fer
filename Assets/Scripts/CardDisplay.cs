@@ -24,5 +24,7 @@ public class CardDisplay : MonoBehaviour
         artworkImage.sprite = card.artwork;
 
         costText.text = card.cost.ToString();
+        
+        this.GetComponentInParent<Image>().sprite = card.background;
     }
 }

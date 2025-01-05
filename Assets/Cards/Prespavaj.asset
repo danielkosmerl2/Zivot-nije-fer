@@ -15,4 +15,5 @@ MonoBehaviour:
   cardName: Prespavaj
   description: "+5 du\u0161evnog zdravlja"
   artwork: {fileID: 21300000, guid: 30dc94bd6dd49cd48bfe3db4dce8e500, type: 3}
+  background: {fileID: 21300000, guid: c2840b53d9acdb74592fbcdc4a2ebc7c, type: 3}
   cost: 1

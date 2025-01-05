@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Dokazi
   m_EditorClassIdentifier: 
   cardName: "Doka\u017Ei"
-  description: Napravi 1 teorijski bod
+  description: "Rije\u0161i 1 teorijski problem"
   artwork: {fileID: 21300000, guid: 173f2484bd1c97f46a95dd4006179481, type: 3}
+  background: {fileID: 21300000, guid: 67e493e023a8bb34a96da951cb6603c1, type: 3}
   cost: 1
