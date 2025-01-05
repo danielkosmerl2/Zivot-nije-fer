@@ -11,8 +11,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2ca1278f67a35f479c72881ab8a4be1, type: 3}
   m_Name: if_else
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier:
   cardName: IF-ELSE
-  description: Napravi 1 programski bod
-  artwork: {fileID: 21300000, guid: 5451d734074bb7549aa984e92db24e1a, type: 3}
+  description: "Rije\u0161i 1 programski problem"
+  artwork: {fileID: 21300000, guid: 30dc94bd6dd49cd48bfe3db4dce8e500, type: 3}
+  background: {fileID: 21300000, guid: 0111fd89e95b1e146a2ced753cc45511, type: 3}
   cost: 1

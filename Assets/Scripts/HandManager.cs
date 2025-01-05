@@ -14,20 +14,16 @@ public class HandManager : MonoBehaviour
     public GameObject overlayPanel;
     void Start()
     {
-        AddCard();
-        AddCard();
-        AddCard();
-        AddCard();
-        AddCard();
+
     }
 
-    public void AddCard(/*Card card*/)
+    public void AddCard(Card card)
     {
         GameObject newCard = Instantiate(cardPrefab, handTransform.position, Quaternion.identity, handTransform);
         newCard.GetComponent<Button>().onClick.AddListener(showPlayButton);
         cards.Add(newCard);
 
-        //newCard.GetComponent<CardDisplay>().card = card;
+        newCard.GetComponent<CardDisplay>().card = card;
 
         UpdateVisuals();
     }
