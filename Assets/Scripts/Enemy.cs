@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
     //rijecnik koji sadrzi ukupan maxhealth od enemya
     public Dictionary<string, int> health;
     public Dictionary<string, int> maxHealth;
+
+    private Dictionary<string, HealthBar> healthBarDict = new Dictionary<string, HealthBar>();
     void Start()
     {
         health = new Dictionary<string, int>
@@ -31,28 +33,12 @@ public class Enemy : MonoBehaviour
 
         maxHealth = health;
 
-
-        HealthBar[] healthBars = GetComponentsInChildren<HealthBar>();
-
+        HealthBar[] healthBars = GetComponentsInChildren<HealthBar>(true); // Include inactive objects
         foreach (HealthBar healthBar in healthBars)
         {
-            if (healthBar.name == "RB HealthBar")
-            {
-                RB_healthBar = healthBar;
-                RB_healthBar.UpdateHealthBar(maxHealth["RB"], maxHealth["RB"]);
-            }
-            if (healthBar.name == "PB HealthBar")
-            {
-                PB_healthBar = healthBar;
-                PB_healthBar.UpdateHealthBar(maxHealth["PB"], maxHealth["PB"]);
-            }
-            if (healthBar.name == "TB HealthBar")
-            {
-                TB_healthBar = healthBar;
-                TB_healthBar.UpdateHealthBar(maxHealth["TB"], maxHealth["TB"]);
-            }
+            healthBarDict[healthBar.name] = healthBar;
+            healthBar.gameObject.SetActive(false); // Start with all health bars hidden
         }
-
 
     }
 
@@ -63,6 +49,7 @@ public class Enemy : MonoBehaviour
         {
             health[bodovi] = 0;
         }
+        Debug.Log(health[bodovi]);
         switch (bodovi)
         {
             case "PB":
@@ -80,6 +67,40 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
+
+    public void spawnHealthBars()
+    {
+        if (PB != 0 && healthBarDict.TryGetValue("PB HealthBar", out PB_healthBar))
+        {
+            PB_healthBar.gameObject.SetActive(true);
+            PB_healthBar.Fill();
+        }
+        else if (PB_healthBar != null)
+        {
+            PB_healthBar.gameObject.SetActive(false);
+        }
+
+        if (RB != 0 && healthBarDict.TryGetValue("RB HealthBar", out RB_healthBar))
+        {
+            RB_healthBar.gameObject.SetActive(true);
+            RB_healthBar.Fill();
+        }
+        else if (RB_healthBar != null)
+        {
+            RB_healthBar.gameObject.SetActive(false);
+        }
+
+        if (TB != 0 && healthBarDict.TryGetValue("TB HealthBar", out TB_healthBar))
+        {
+            TB_healthBar.gameObject.SetActive(true);
+            TB_healthBar.Fill();
+        }
+        else if (TB_healthBar != null)
+        {
+            TB_healthBar.gameObject.SetActive(false);
+        }
+    }
+        
 
     public void Die()
     {

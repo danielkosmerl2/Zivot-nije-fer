@@ -11,6 +11,8 @@ public class EnemyDisplay : MonoBehaviour
     public EnemyScriptable diglog_lab;
     public EnemyScriptable matan1_mi;
 
+    public Enemy enemy;
+
     public List<EnemyScriptable> enemies = new List<EnemyScriptable>();
 
     public Image artworkImage;
@@ -50,8 +52,14 @@ public class EnemyDisplay : MonoBehaviour
         tbText.text = enemies[enemyIndex].tb.ToString() + " TB";
         enemyNameText.text = enemies[enemyIndex].enemyName + ":";
         ectsText.text = enemies[enemyIndex].ects.ToString() + " ECTS";
+
+        enemy.ECTS = enemies[enemyIndex].ects;
+        enemy.TB = enemies[enemyIndex].tb;
+        enemy.RB = enemies[enemyIndex].rb;
+        enemy.PB = enemies[enemyIndex].pb;
+        enemy.predmet = enemies[enemyIndex].enemyName;
+        enemy.spawnHealthBars();
     }
-    
 
     
     public void changeEnemyDiglog()
