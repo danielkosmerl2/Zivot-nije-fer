@@ -3128,8 +3128,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -247, y: 75}
-  m_SizeDelta: {x: 300.6792, y: 226.38}
+  m_AnchoredPosition: {x: -241.2348, y: 131.26}
+  m_SizeDelta: {x: 312.2098, y: 338.91}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1178380230
 MonoBehaviour:
@@ -3205,6 +3205,9 @@ MonoBehaviour:
   diglog_lab: {fileID: 11400000, guid: 27ce342f5255e0a47b12362e7d03d505, type: 2}
   matan1_mi: {fileID: 11400000, guid: cd3299b4a6a514242984b0bf0729aac0, type: 2}
   artworkImage: {fileID: 1178380230}
+  pbText: {fileID: 120168678}
+  rbText: {fileID: 1960125500}
+  tbText: {fileID: 1561546723}
 --- !u!1 &1209307279
 GameObject:
   m_ObjectHideFlags: 0
@@ -4103,7 +4106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 143}
+  m_AnchoredPosition: {x: -5, y: 249}
   m_SizeDelta: {x: 0, y: -196.1296}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1869516740
