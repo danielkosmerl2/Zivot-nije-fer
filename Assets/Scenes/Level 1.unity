@@ -704,6 +704,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58438065}
   m_CullTransparentMesh: 1
+--- !u!1 &69269566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 69269567}
+  - component: {fileID: 69269568}
+  m_Layer: 5
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &69269567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69269566}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &69269568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69269566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb71e739e0970c49b2c5dda61c38a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {fileID: 1013201318}
 --- !u!1 &90234578
 GameObject:
   m_ObjectHideFlags: 0
@@ -3543,6 +3588,7 @@ MonoBehaviour:
   playCardButton: {fileID: 736172706}
   overlayPanel: {fileID: 1692967420}
   handSize: 5
+  gameManager: {fileID: 69269568}
 --- !u!1 &1059408395
 GameObject:
   m_ObjectHideFlags: 0
@@ -3758,8 +3804,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 1013201318}
-  bod_type: 
-  enemy: {fileID: 0}
+  damageType: 0
+  amount: 2
 --- !u!1 &1153969254
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,8 +3859,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 1013201318}
-  bod_type: 
-  enemy: {fileID: 0}
+  damageType: 0
+  amount: 2
 --- !u!114 &1153969257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4157,6 +4203,7 @@ MonoBehaviour:
   upro_lab: {fileID: 11400000, guid: feb688f6bc0f16d4b9c2b53166818d62, type: 2}
   diglog_lab: {fileID: 11400000, guid: 27ce342f5255e0a47b12362e7d03d505, type: 2}
   matan1_mi: {fileID: 11400000, guid: cd3299b4a6a514242984b0bf0729aac0, type: 2}
+  enemy: {fileID: 1178380232}
   enemies: []
   artworkImage: {fileID: 1178380230}
   pbText: {fileID: 120168678}
@@ -5493,8 +5540,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 1013201318}
-  bod_type: 
-  enemy: {fileID: 0}
+  damageType: 0
+  amount: 2
 --- !u!114 &1891930717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6474,3 +6521,4 @@ SceneRoots:
   - {fileID: 1013201322}
   - {fileID: 1059408398}
   - {fileID: 801124099}
+  - {fileID: 69269567}

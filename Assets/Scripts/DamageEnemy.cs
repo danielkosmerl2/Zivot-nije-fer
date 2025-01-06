@@ -5,20 +5,20 @@ using UnityEngine;
 public class DamageEnemy : MonoBehaviour
 {
     public GameObject background;
-    public string bod_type;
-    private int amount = 2;
-    public Enemy enemy;
+    public DamageType damageType;
+    public int amount = 2;
+    private Enemy enemy;
     public void Damage()
     {
-        switch (bod_type)
+        switch (damageType)
         {
-            case "PB DMG":
+            case DamageType.Programski:
                 enemy.takeDamage("PB", amount);
                 break;
-            case "TB DMG":
+            case DamageType.Teorijski:
                 enemy.takeDamage("TB", amount);
                 break;
-            case "RB DMG":
+            case DamageType.Racunski:
                 enemy.takeDamage("RB", amount);
                 break;
             default:
@@ -29,7 +29,6 @@ public class DamageEnemy : MonoBehaviour
     void Start()
     {
         enemy = background.GetComponentInChildren<Enemy>();
-        bod_type = gameObject.name;
     }
 
     // Update is called once per frame

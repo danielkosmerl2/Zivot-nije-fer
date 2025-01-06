@@ -14,6 +14,7 @@ public class HandManager : MonoBehaviour
     public GameObject overlayPanel;
     public int handSize = 5;
     private GameObject selected;
+    public GameManager gameManager;
     void Start()
     {
 
@@ -59,6 +60,7 @@ public class HandManager : MonoBehaviour
     private void PlayCard()
     {
         if(!selected) return;
+        selected.GetComponent<CardDisplay>().card.effect.Effect(gameManager);
         RemoveCard(selected);
         cancelPlayCard();
         UpdateVisuals();
