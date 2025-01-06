@@ -49,9 +49,13 @@ public class DeckManager : MonoBehaviour
     public void DiscardHand()
     {
         while(handManager.cards.Count > 0){
-            discard.Add(handManager.cards[0].GetComponent<CardDisplay>().card);
             handManager.RemoveCard(0);
         }
+    }
+
+    public void Discard(Card card)
+    {
+        discard.Add(card);
     }
 
     public void DiscardAndDraw()

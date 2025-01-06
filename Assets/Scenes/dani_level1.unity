@@ -3590,6 +3590,7 @@ MonoBehaviour:
   playCardButton: {fileID: 736172706}
   overlayPanel: {fileID: 1692967420}
   handSize: 5
+  deckManager: {fileID: 721916335}
   gameManager: {fileID: 69269568}
 --- !u!1 &1059408395
 GameObject:
