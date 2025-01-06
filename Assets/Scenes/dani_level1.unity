@@ -544,7 +544,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Draw!
+  m_text: End Turn
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -885,7 +885,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1324388831}
         m_TargetAssemblyTypeName: DeckManager, Assembly-CSharp
-        m_MethodName: DrawCard
+        m_MethodName: DiscardAndDraw
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1973,6 +1973,7 @@ MonoBehaviour:
   cancelPlayButton: {fileID: 958816264}
   playCardButton: {fileID: 736172706}
   overlayPanel: {fileID: 1692967420}
+  handSize: 5
 --- !u!1 &1059408395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2339,6 +2340,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f4eedb46df7cd2f43a562010bc23df51, type: 2}
   - {fileID: 11400000, guid: 2d39c4841fd9b3648b04e78a20325596, type: 2}
   - {fileID: 11400000, guid: d66a9dde4b473c24188dd852d96d8160, type: 2}
+  discard: []
   handManager: {fileID: 1042388538}
 --- !u!1 &1395863199
 GameObject:

@@ -12,6 +12,7 @@ public class HandManager : MonoBehaviour
     public GameObject cancelPlayButton;
     public GameObject playCardButton;
     public GameObject overlayPanel;
+    public int handSize = 5;
     void Start()
     {
 
@@ -24,11 +25,14 @@ public class HandManager : MonoBehaviour
         cards.Add(newCard);
 
         newCard.GetComponent<CardDisplay>().card = card;
-
-        UpdateVisuals();
     }
 
-    private void UpdateVisuals()
+    public void RemoveCard(int index)
+    {
+        cards.RemoveAt(index);
+    }
+
+    public void UpdateVisuals()
     {
         for(int i = 0; i < cards.Count; i++){
             cards[i].transform.localPosition = new Vector3(cardSpacing * (i - (cards.Count - 1) / 2f), 0f, 0f);
