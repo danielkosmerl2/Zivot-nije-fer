@@ -11,6 +11,14 @@ public class DamageEffect : CardEffect {
     public int amount;
     public DamageType type;
     public override void Effect(GameManager gameManager) {
-        gameManager.Damage(type, amount);
+        gameManager.DamageEnemy(type, amount);
+    }
+}
+
+[CreateAssetMenu(menuName = "CardEffect/Heal", fileName = "New Effect")]
+public class HealEffect : CardEffect {
+    public int amount;
+    public override void Effect(GameManager gameManager) {
+        gameManager.DamagePlayer(-amount);
     }
 }

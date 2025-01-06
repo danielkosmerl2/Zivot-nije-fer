@@ -10,8 +10,12 @@ public enum DamageType
 public class GameManager : MonoBehaviour
 {
     public GameObject background;
-    private Enemy enemy;
-    public void Damage(DamageType type, int amount)
+    public Enemy enemy;
+    public Player player;
+    public GameObject overlayPanel;
+    public GameObject endGameText;
+    public GameObject endGameBtn;
+    public void DamageEnemy(DamageType type, int amount)
     {
         switch (type)
         {
@@ -29,8 +33,22 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-    void Start()
+
+    public void DamagePlayer(int amount)
     {
-        enemy = background.GetComponentInChildren<Enemy>();
+        player.UpdateHealth(-amount);
+    }
+
+    public void EndTurn()
+    {
+        player.UpdateHealth(-enemy.ECTS);
+    }
+
+    public void endGame()
+    {
+        overlayPanel.SetActive(true);
+        endGameText.SetActive(true);
+        endGameBtn.SetActive(true);
+        Debug.Log("Izgubili ste!");
     }
 }

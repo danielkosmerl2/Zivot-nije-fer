@@ -218,9 +218,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1021457377}
-        m_TargetAssemblyTypeName: DamagePlayer, Assembly-CSharp
-        m_MethodName: damagePlayer
+      - m_Target: {fileID: 69269568}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: EndTurn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -750,6 +750,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   background: {fileID: 1013201318}
   enemy: {fileID: 1178380232}
+  player: {fileID: 1021457377}
+  overlayPanel: {fileID: 1692967420}
+  endGameText: {fileID: 884508109}
+  endGameBtn: {fileID: 58438065}
 --- !u!1 &90234578
 GameObject:
   m_ObjectHideFlags: 0
@@ -3525,14 +3529,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1021457373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 195d371db10fba54398ef39e3138671e, type: 3}
+  m_Script: {fileID: 11500000, guid: e3678bad78defaa4784eb17a00a1056d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healthValue: {fileID: 1436008938}
-  enemyECTS: {fileID: 487149428}
-  overlayPanel: {fileID: 1278025876}
-  endGameText: {fileID: 884508109}
-  endGameBtn: {fileID: 58438065}
+  gameManager: {fileID: 69269568}
 --- !u!1 &1042388536
 GameObject:
   m_ObjectHideFlags: 0

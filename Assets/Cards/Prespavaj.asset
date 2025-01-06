@@ -17,3 +17,4 @@ MonoBehaviour:
   artwork: {fileID: 21300000, guid: 9aae4f26448d898468ad1eb45a4e0a15, type: 3}
   background: {fileID: 21300000, guid: c2840b53d9acdb74592fbcdc4a2ebc7c, type: 3}
   cost: 1
+  effect: {fileID: 11400000, guid: ac39ae8cda0145e4b8e73b59134d0cc3, type: 2}
