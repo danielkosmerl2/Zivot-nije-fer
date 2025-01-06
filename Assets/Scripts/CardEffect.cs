@@ -8,7 +8,9 @@ public abstract class CardEffect : ScriptableObject {
 
 [CreateAssetMenu(menuName = "CardEffect/Damage", fileName = "New Effect")]
 public class DamageEffect : CardEffect {
+    public int amount;
+    public DamageType type;
     public override void Effect(GameManager gameManager) {
-        gameManager.Damage(DamageType.Programski, 2);
+        gameManager.Damage(type, amount);
     }
 }
