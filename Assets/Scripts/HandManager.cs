@@ -13,6 +13,7 @@ public class HandManager : MonoBehaviour
     public GameObject playCardButton;
     public GameObject overlayPanel;
     public int handSize = 5;
+    private GameObject selected;
     void Start()
     {
 
@@ -21,7 +22,7 @@ public class HandManager : MonoBehaviour
     public void AddCard(Card card)
     {
         GameObject newCard = Instantiate(cardPrefab, handTransform.position, Quaternion.identity, handTransform);
-        newCard.GetComponent<Button>().onClick.AddListener(showPlayButton);
+        newCard.GetComponent<Button>().onClick.AddListener(() => SelectCard(newCard));
         cards.Add(newCard);
 
         newCard.GetComponent<CardDisplay>().card = card;
@@ -29,7 +30,14 @@ public class HandManager : MonoBehaviour
 
     public void RemoveCard(int index)
     {
-        cards.RemoveAt(index);
+        GameObject card = cards[index];
+        RemoveCard(card);
+    }
+
+    public void RemoveCard(GameObject card)
+    {
+        cards.Remove(card);
+        Destroy(card);
     }
 
     public void UpdateVisuals()
@@ -39,11 +47,21 @@ public class HandManager : MonoBehaviour
         }
     }
 
-    private void showPlayButton()
+    private void SelectCard(GameObject card)
     {
+        selected = card;
         overlayPanel.SetActive(true);
         cancelPlayButton.SetActive(true);
         playCardButton.SetActive(true);
+        playCardButton.GetComponent<Button>().onClick.AddListener(PlayCard);
+    }
+
+    private void PlayCard()
+    {
+        if(!selected) return;
+        RemoveCard(selected);
+        cancelPlayCard();
+        UpdateVisuals();
     }
 
     public void cancelPlayCard()
@@ -51,5 +69,6 @@ public class HandManager : MonoBehaviour
         overlayPanel.SetActive(false);
         cancelPlayButton.SetActive(false);
         playCardButton.SetActive(false);
+        selected = null;
     }
 }
