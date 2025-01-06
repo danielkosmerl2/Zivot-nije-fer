@@ -12,6 +12,8 @@ public class HealthBar : MonoBehaviour
 
     public void UpdateHealthBar(int currentVal, int maxVal)
     {
+        Debug.Log("Current val" + currentVal.ToString());
+        Debug.Log("MAX val" + maxVal.ToString());
         if (maxVal > 0)
         {
             slider.value = (float)currentVal / (float)maxVal;

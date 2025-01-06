@@ -24,15 +24,6 @@ public class Enemy : MonoBehaviour
     private Dictionary<string, HealthBar> healthBarDict = new Dictionary<string, HealthBar>();
     void Start()
     {
-        health = new Dictionary<string, int>
-        {
-        { "PB",  PB},
-        { "TB", TB },
-        { "RB", RB }
-        };
-
-        maxHealth = health;
-
         HealthBar[] healthBars = GetComponentsInChildren<HealthBar>(true); // Include inactive objects
         foreach (HealthBar healthBar in healthBars)
         {
@@ -44,26 +35,30 @@ public class Enemy : MonoBehaviour
 
     public void takeDamage(string bodovi, int amount)
     {
+
+        
+        Debug.Log("Current health: " + health[bodovi].ToString());
+        Debug.Log("Dmg amount: " + amount.ToString());
         health[bodovi] = health[bodovi] - amount;
+
         if (health[bodovi] < 0)
         {
             health[bodovi] = 0;
         }
-        Debug.Log(health[bodovi]);
         switch (bodovi)
         {
             case "PB":
-                PB_healthBar.UpdateHealthBar(health[bodovi], maxHealth[bodovi]);
+                PB_healthBar.UpdateHealthBar(health[bodovi], PB);
                 break;
             case "RB":
-                RB_healthBar.UpdateHealthBar(health[bodovi], maxHealth[bodovi]);
+                RB_healthBar.UpdateHealthBar(health[bodovi], RB);
                 break;
             case "TB":
-                TB_healthBar.UpdateHealthBar(health[bodovi], maxHealth[bodovi]);
+                TB_healthBar.UpdateHealthBar(health[bodovi], TB);
                 break;
         }
         
-        if (health.Values.Sum() < 0) {
+        if (health.Values.Sum() <= 0) {
             Die();
         }
     }
@@ -99,8 +94,18 @@ public class Enemy : MonoBehaviour
         {
             TB_healthBar.gameObject.SetActive(false);
         }
+
+        health = new Dictionary<string, int>
+        {
+        { "PB",  PB},
+        { "TB", TB },
+        { "RB", RB }
+        };
+
+        maxHealth = health;
+
     }
-        
+
 
     public void Die()
     {
