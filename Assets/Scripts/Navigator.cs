@@ -14,4 +14,9 @@ public class Navigator : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void goToRulesFromMenu()
+    {
+        SceneManager.LoadScene("Pravila_mainMenu");
+    }
 }
