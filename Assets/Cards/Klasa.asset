@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2ca1278f67a35f479c72881ab8a4be1, type: 3}
-  m_Name: Dokazi
+  m_Name: Klasa
   m_EditorClassIdentifier: 
-  cardName: "Doka\u017Ei"
-  description: "Rije\u0161i 1 teorijski problem"
-  artwork: {fileID: 21300000, guid: 173f2484bd1c97f46a95dd4006179481, type: 3}
-  background: {fileID: 21300000, guid: 0111fd89e95b1e146a2ced753cc45511, type: 3}
+  cardName: Klasa
+  description: "Ovaj potez svako programsko rje\u0161enje rje\u0161ava 1 problem
+    vi\u0161e"
+  artwork: {fileID: 0}
+  background: {fileID: 21300000, guid: b91ce01a9fbb225419ba8500c1affe9f, type: 3}
   cost: 1
-  effect: {fileID: 11400000, guid: 4fc66818091117c469e75319629c5005, type: 2}
+  effect: {fileID: 11400000, guid: ad7b54141114e3f49851a91e8aaf5f34, type: 2}

@@ -15,6 +15,6 @@ MonoBehaviour:
   cardName: FOR petlja
   description: "Rije\u0161i 1 programski problem"
   artwork: {fileID: 21300000, guid: 29a5bb8dc54ba2842ba522b16fa0c056, type: 3}
-  background: {fileID: 21300000, guid: 0111fd89e95b1e146a2ced753cc45511, type: 3}
+  background: {fileID: 21300000, guid: b91ce01a9fbb225419ba8500c1affe9f, type: 3}
   cost: 1
   effect: {fileID: 11400000, guid: 0df450c6db53ca2488f3ffad13877ea2, type: 2}

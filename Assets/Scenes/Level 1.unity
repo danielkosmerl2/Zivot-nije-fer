@@ -557,6 +557,7 @@ MonoBehaviour:
   endGameText: {fileID: 884508109}
   endGameBtn: {fileID: 58438065}
   deckManager: {fileID: 721916335}
+  statuses: 
 --- !u!1 &90234578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,7 +1565,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f4eedb46df7cd2f43a562010bc23df51, type: 2}
   - {fileID: 11400000, guid: 2d39c4841fd9b3648b04e78a20325596, type: 2}
   - {fileID: 11400000, guid: d66a9dde4b473c24188dd852d96d8160, type: 2}
-  - {fileID: 11400000, guid: d66a9dde4b473c24188dd852d96d8160, type: 2}
+  - {fileID: 11400000, guid: 52e3d8e0d223d2a4aa96aed9bbf0897c, type: 2}
+  - {fileID: 11400000, guid: d331a41ad1ea670418923bfeeb76aec3, type: 2}
+  - {fileID: 11400000, guid: fc1c61424e8438e4aba3ea4e949908ab, type: 2}
+  - {fileID: 11400000, guid: b701d1f8be56fc5498f7637f86f8d766, type: 2}
+  - {fileID: 11400000, guid: 7225146a77267dc4ea186e4d68dceeb1, type: 2}
+  - {fileID: 11400000, guid: 33c131f6c3d607f4fa802321e15cfe1c, type: 2}
+  - {fileID: 11400000, guid: 748620e3c1601194aab656f104dfa96e, type: 2}
   discard: []
   handManager: {fileID: 1042388538}
   deckCounter: {fileID: 1284747388}
@@ -5104,7 +5111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.41622925}
+  m_AnchoredPosition: {x: 0, y: -0.41625977}
   m_SizeDelta: {x: 0, y: -0.83276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934538217

@@ -17,6 +17,12 @@ public class Player : MonoBehaviour
     {
         energy = maxEnergy;
     }
+
+    public void SetHealth(int amount)
+    {
+        healthValue.text = amount.ToString();
+    }
+    
     public void UpdateHealth(int amount)
     {
         int playerHealth = int.Parse(healthValue.text);
