@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DeckManager : MonoBehaviour
@@ -7,6 +8,8 @@ public class DeckManager : MonoBehaviour
     public List<Card> cards = new List<Card>();
     public List<Card> discard = new List<Card>();
     public HandManager handManager;
+    public TextMeshProUGUI deckCounter;
+    public TextMeshProUGUI discardCounter;
 
     void Start()
     {
@@ -44,6 +47,8 @@ public class DeckManager : MonoBehaviour
         Card nextCard = cards[0];
         cards.RemoveAt(0);
         handManager.AddCard(nextCard);
+        deckCounter.text = cards.Count.ToString();
+        discardCounter.text = discard.Count.ToString();
     }
 
     public void DiscardHand()
@@ -56,6 +61,7 @@ public class DeckManager : MonoBehaviour
     public void Discard(Card card)
     {
         discard.Add(card);
+        discardCounter.text = discard.Count.ToString();
     }
 
     public void DiscardAndDraw()
