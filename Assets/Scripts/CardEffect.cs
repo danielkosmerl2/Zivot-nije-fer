@@ -11,6 +11,24 @@ public class DamageEffect : CardEffect {
     public int amount;
     public DamageType type;
     public override void Effect(GameManager gameManager) {
-        gameManager.Damage(type, amount);
+        gameManager.DamageEnemy(type, amount);
+    }
+}
+
+[CreateAssetMenu(menuName = "CardEffect/Heal", fileName = "New Effect")]
+public class HealEffect : CardEffect {
+    public int amount;
+    public override void Effect(GameManager gameManager) {
+        gameManager.DamagePlayer(-amount);
+    }
+}
+
+[CreateAssetMenu(menuName = "CardEffect/Draw", fileName = "New Effect")]
+public class DrawEffect : CardEffect {
+    public int amount;
+    public override void Effect(GameManager gameManager) {
+        for(int i=0; i<amount; i++) {
+            gameManager.deckManager.DrawCard();
+        }
     }
 }
