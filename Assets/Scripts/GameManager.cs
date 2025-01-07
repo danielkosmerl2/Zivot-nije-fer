@@ -51,6 +51,5 @@ public class GameManager : MonoBehaviour
         overlayPanel.SetActive(true);
         endGameText.SetActive(true);
         endGameBtn.SetActive(true);
-        Debug.Log("Izgubili ste!");
     }
 }

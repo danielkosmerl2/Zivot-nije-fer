@@ -3,9 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using TMPro;
+using System;
 
 public class Enemy : MonoBehaviour
 {
+    public EnemyDisplay enemyDisplay;
+    public GameObject overlayPanel;
+    public GameObject winGameText;
+    public GameObject endGameBtn;
+
     public string predmet; //naziv predmeta
     public int ECTS;
 
@@ -17,6 +23,8 @@ public class Enemy : MonoBehaviour
     public int RB;
     public int TB;
 
+    static int indeks;
+
     //rijecnik koji sadrzi ukupan maxhealth od enemya
     public Dictionary<string, int> health;
     public Dictionary<string, int> maxHealth;
@@ -24,6 +32,7 @@ public class Enemy : MonoBehaviour
     private Dictionary<string, HealthBar> healthBarDict = new Dictionary<string, HealthBar>();
     void Start()
     {
+        indeks = 0;
         HealthBar[] healthBars = GetComponentsInChildren<HealthBar>(true); // Include inactive objects
         foreach (HealthBar healthBar in healthBars)
         {
@@ -109,6 +118,18 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
+        indeks += 1;
+        try
+        {
+            enemyDisplay.spawnEnemy(indeks);
+        }
+        catch (Exception e)
+        {
+            overlayPanel.SetActive(true);
+            winGameText.SetActive(true);
+            endGameBtn.SetActive(true);
+        }
+        enemyDisplay.spawnEnemy(indeks);
         Debug.Log("Enemy died");
     }
 

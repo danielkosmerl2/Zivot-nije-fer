@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -10,6 +11,14 @@ public class EnemyDisplay : MonoBehaviour
     public EnemyScriptable upro_lab;
     public EnemyScriptable diglog_lab;
     public EnemyScriptable matan1_mi;
+    public EnemyScriptable upro_mi;
+    public EnemyScriptable vjekom_pitch;
+    public EnemyScriptable oe_lab;
+    public EnemyScriptable oop_lab;
+    public EnemyScriptable matan2_mi;
+    public EnemyScriptable oe_mi;
+    public EnemyScriptable fiz_lab;
+
 
     public Enemy enemy;
 
@@ -38,9 +47,14 @@ public class EnemyDisplay : MonoBehaviour
         enemies.Add(upro_lab);
         enemies.Add(diglog_lab);
         enemies.Add(matan1_mi);
-
+        enemies.Add(upro_mi);
+        enemies.Add(vjekom_pitch);
+        enemies.Add(oe_lab);
+        enemies.Add(oop_lab);
+        enemies.Add(matan2_mi);
+        enemies.Add(oe_mi);
+        enemies.Add(fiz_lab);
         spawnEnemy(0);
-        
     }
 
     
