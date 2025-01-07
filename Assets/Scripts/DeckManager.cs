@@ -47,8 +47,8 @@ public class DeckManager : MonoBehaviour
         Card nextCard = cards[0];
         cards.RemoveAt(0);
         handManager.AddCard(nextCard);
-        deckCounter.text = cards.Count.ToString();
-        discardCounter.text = discard.Count.ToString();
+        deckCounter.text = "U decku je preostalo " + cards.Count + " karata";
+        discardCounter.text = "Izbacili ste " + discard.Count + " karata";
     }
 
     public void DiscardHand()
