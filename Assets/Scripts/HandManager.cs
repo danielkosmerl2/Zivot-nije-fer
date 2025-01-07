@@ -17,7 +17,7 @@ public class HandManager : MonoBehaviour
     public DeckManager deckManager;
     public GameManager gameManager;
     public Player player;
-
+    public ShowEnergy showEnergy;
     public void AddCard(Card card)
     {
         GameObject newCard = Instantiate(cardPrefab, handTransform.position, Quaternion.identity, handTransform);
@@ -64,7 +64,9 @@ public class HandManager : MonoBehaviour
             cancelPlayCard();
             return;
         }
-        player.energyValue.text = (int.Parse(player.energyValue.text) - card.cost).ToString();
+        player.energy = player.energy - card.cost;
+        player.UpdateEnergy(player.energy);
+
         card.effect.Effect(gameManager);
         RemoveCard(selected);
         cancelPlayCard();

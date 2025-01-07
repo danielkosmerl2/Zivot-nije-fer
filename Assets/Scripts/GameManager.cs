@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     {
         player.UpdateHealth(-enemy.ECTS);
         player.UpdateEnergy(player.maxEnergy);
+        player.energy = player.maxEnergy;
     }
 
     public void endGame()
