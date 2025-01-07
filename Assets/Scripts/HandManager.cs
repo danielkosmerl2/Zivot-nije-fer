@@ -60,7 +60,9 @@ public class HandManager : MonoBehaviour
     {
         if(!selected) return;
         Card card = selected.GetComponent<CardDisplay>().card;
-        if(card.cost > int.Parse(player.energyValue.text)){
+        Debug.Log(player.energyValue.text);
+        if (card.cost > int.Parse(player.energyValue.text)){
+            Debug.Log("Tu sam");
             cancelPlayCard();
             return;
         }
