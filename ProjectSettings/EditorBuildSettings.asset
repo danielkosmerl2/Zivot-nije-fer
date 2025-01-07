@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: bfefbec1b50054f4d9f3f563315dd1a4
+  - enabled: 1
+    path: Assets/Scenes/Pravila_mainMenu.unity
+    guid: c147659c0609c3b499031c0d003bafd8
   m_configObjects: {}
