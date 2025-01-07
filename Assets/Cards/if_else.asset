@@ -15,6 +15,6 @@ MonoBehaviour:
   cardName: IF-ELSE
   description: "Rije\u0161i 1 programski problem"
   artwork: {fileID: 21300000, guid: 5451d734074bb7549aa984e92db24e1a, type: 3}
-  background: {fileID: 21300000, guid: b91ce01a9fbb225419ba8500c1affe9f, type: 3}
+  background: {fileID: 21300000, guid: 600839483a03d1f4eaea2b7af1205e51, type: 3}
   cost: 1
   effect: {fileID: 11400000, guid: 0df450c6db53ca2488f3ffad13877ea2, type: 2}
