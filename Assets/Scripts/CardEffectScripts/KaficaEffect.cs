@@ -7,6 +7,5 @@ public class KaficaEffect : CardEffect {
     public override void Effect(GameManager gameManager) {
         gameManager.deckManager.DrawCard();
         gameManager.player.energy += 2;
-        gameManager.player.UpdateEnergy(gameManager.player.energy);
     }
 }

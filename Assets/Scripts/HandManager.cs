@@ -65,9 +65,9 @@ public class HandManager : MonoBehaviour
             return;
         }
         player.energy = player.energy - card.cost;
-        player.UpdateEnergy(player.energy);
 
         card.effect.Effect(gameManager);
+        player.UpdateEnergy(player.energy);
         RemoveCard(selected);
         cancelPlayCard();
         UpdateVisuals();
