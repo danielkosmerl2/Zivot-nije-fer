@@ -60,13 +60,14 @@ public class HandManager : MonoBehaviour
     {
         if(!selected) return;
         Card card = selected.GetComponent<CardDisplay>().card;
-        Debug.Log(player.energyValue.text);
+        Debug.Log("PlayCard " + player.energyValue.text);
         if (card.cost > int.Parse(player.energyValue.text)){
-            Debug.Log("Tu sam");
+            Debug.Log("Not enough energy");
             cancelPlayCard();
             return;
         }
         player.energy = player.energy - card.cost;
+        player.energyValue.text = player.energy.ToString();
         player.UpdateEnergy(player.energy);
 
         card.effect.Effect(gameManager);

@@ -46,8 +46,6 @@ public class Enemy : MonoBehaviour
     {
 
         
-        Debug.Log("Current health: " + health[bodovi].ToString());
-        Debug.Log("Dmg amount: " + amount.ToString());
         health[bodovi] = health[bodovi] - amount;
 
         if (health[bodovi] < 0)

@@ -18,6 +18,7 @@ public class ShowEnergy : MonoBehaviour
     {
         // Get the current number of elements
         int currentCount = panel.childCount;
+        Debug.Log("Current energy in ShowEnergy is " + amount);
 
         // Add elements if the amount is greater than the current count
         if (amount > currentCount)

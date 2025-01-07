@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour
         player.UpdateHealth(-enemy.ECTS);
         player.UpdateEnergy(player.maxEnergy);
         player.energy = player.maxEnergy;
+        player.energyValue.text = player.energy.ToString();
         statuses.Remove(Statuses.Klasa);
     }
 
