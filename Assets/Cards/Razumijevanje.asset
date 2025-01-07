@@ -15,6 +15,6 @@ MonoBehaviour:
   cardName: Razumijevanje
   description: "Sljede\u0107e rje\u0161enje rje\u0161ava teorijski problem"
   artwork: {fileID: 0}
-  background: {fileID: 21300000, guid: 67e493e023a8bb34a96da951cb6603c1, type: 3}
+  background: {fileID: 21300000, guid: 0111fd89e95b1e146a2ced753cc45511, type: 3}
   cost: 0
   effect: {fileID: 11400000, guid: 39441027fda739448b1ec3dab663593f, type: 2}

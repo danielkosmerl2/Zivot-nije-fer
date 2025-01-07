@@ -16,6 +16,6 @@ MonoBehaviour:
   description: "Ovaj potez svako programsko rje\u0161enje rje\u0161ava 1 problem
     vi\u0161e"
   artwork: {fileID: 0}
-  background: {fileID: 21300000, guid: 0111fd89e95b1e146a2ced753cc45511, type: 3}
+  background: {fileID: 21300000, guid: b91ce01a9fbb225419ba8500c1affe9f, type: 3}
   cost: 1
   effect: {fileID: 11400000, guid: ad7b54141114e3f49851a91e8aaf5f34, type: 2}
