@@ -9,7 +9,7 @@ public enum DamageType
 
 public enum Statuses
 {
-    Klasa, Laplace
+    Klasa, Laplace, Razumijevanje
 }
 
 public class GameManager : MonoBehaviour
@@ -24,6 +24,10 @@ public class GameManager : MonoBehaviour
     public List<Statuses> statuses;
     public void DamageEnemy(DamageType type, int amount)
     {
+        if (statuses.Contains(Statuses.Razumijevanje)) {
+            type = DamageType.Teorijski;
+            statuses.Remove(Statuses.Razumijevanje);
+        }
         switch (type)
         {
             case DamageType.Programski:
