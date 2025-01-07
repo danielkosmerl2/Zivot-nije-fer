@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
     public void EndTurn()
     {
         player.UpdateHealth(-enemy.ECTS);
+        player.UpdateEnergy(player.maxEnergy);
     }
 
     public void endGame()

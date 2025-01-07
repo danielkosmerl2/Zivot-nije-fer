@@ -16,10 +16,7 @@ public class HandManager : MonoBehaviour
     private GameObject selected;
     public DeckManager deckManager;
     public GameManager gameManager;
-    void Start()
-    {
-
-    }
+    public Player player;
 
     public void AddCard(Card card)
     {
@@ -62,7 +59,13 @@ public class HandManager : MonoBehaviour
     private void PlayCard()
     {
         if(!selected) return;
-        selected.GetComponent<CardDisplay>().card.effect.Effect(gameManager);
+        Card card = selected.GetComponent<CardDisplay>().card;
+        if(card.cost > int.Parse(player.energyValue.text)){
+            cancelPlayCard();
+            return;
+        }
+        player.energyValue.text = (int.Parse(player.energyValue.text) - card.cost).ToString();
+        card.effect.Effect(gameManager);
         RemoveCard(selected);
         cancelPlayCard();
         UpdateVisuals();

@@ -6,7 +6,9 @@ using TMPro;
 public class Player : MonoBehaviour
 {
     public TextMeshProUGUI healthValue;
+    public TextMeshProUGUI energyValue;
     public GameManager gameManager;
+    public int maxEnergy = 3;
     
     public void UpdateHealth(int amount)
     {
@@ -17,5 +19,10 @@ public class Player : MonoBehaviour
             gameManager.endGame();
         }
         healthValue.text = playerHealth.ToString();
+    }
+
+    public void UpdateEnergy(int amount)
+    {
+        energyValue.text = amount.ToString();
     }
 }
