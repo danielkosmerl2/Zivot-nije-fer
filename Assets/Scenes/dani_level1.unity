@@ -750,11 +750,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   background: {fileID: 1013201318}
   enemy: {fileID: 1178380232}
-  player: {fileID: 0}
-  overlayPanel: {fileID: 0}
-  endGameText: {fileID: 0}
-  endGameBtn: {fileID: 0}
-  deckManager: {fileID: 0}
+  player: {fileID: 1021457377}
+  overlayPanel: {fileID: 1692967420}
+  endGameText: {fileID: 884508109}
+  endGameBtn: {fileID: 58438065}
+  deckManager: {fileID: 721916335}
 --- !u!1 &90234578
 GameObject:
   m_ObjectHideFlags: 0
@@ -3591,7 +3591,7 @@ MonoBehaviour:
   playCardButton: {fileID: 736172706}
   overlayPanel: {fileID: 1692967420}
   handSize: 5
-  deckManager: {fileID: 0}
+  deckManager: {fileID: 721916335}
   gameManager: {fileID: 69269568}
 --- !u!1 &1059408395
 GameObject:
@@ -3807,9 +3807,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212fabe5afe311f4fa8e733c1641b5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  background: {fileID: 1013201318}
-  damageType: 0
-  amount: 2
 --- !u!1 &1153969254
 GameObject:
   m_ObjectHideFlags: 0
@@ -3862,9 +3859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212fabe5afe311f4fa8e733c1641b5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  background: {fileID: 1013201318}
-  damageType: 0
-  amount: 2
 --- !u!114 &1153969257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5543,9 +5537,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212fabe5afe311f4fa8e733c1641b5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  background: {fileID: 1013201318}
-  damageType: 0
-  amount: 2
 --- !u!114 &1891930717
 MonoBehaviour:
   m_ObjectHideFlags: 0
