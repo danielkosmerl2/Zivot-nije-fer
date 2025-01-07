@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Prijatna Kafica
   description: Napuni 2 energije i vuci kartu
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300000, guid: 4b09e8c00a5fbac4fa7f7491c45e9f38, type: 3}
   background: {fileID: 21300000, guid: 984c51aa1ef171049bca7bdcbf26bda0, type: 3}
   cost: 1
   effect: {fileID: 11400000, guid: aef586e880d57fc43989951bab8b7b0e, type: 2}

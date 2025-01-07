@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Rekurzija
   description: "Rije\u0161i 2 programska problema i dodaj novu rekurziju"
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300000, guid: 987b64258b43f8740a25aa82736eec34, type: 3}
   background: {fileID: 21300000, guid: 600839483a03d1f4eaea2b7af1205e51, type: 3}
   cost: 1
   effect: {fileID: 11400000, guid: 4aa793c143e3ef945bdc3f12113504a4, type: 2}
