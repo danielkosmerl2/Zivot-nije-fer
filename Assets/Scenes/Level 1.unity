@@ -1455,6 +1455,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fc1c61424e8438e4aba3ea4e949908ab, type: 2}
   - {fileID: 11400000, guid: b701d1f8be56fc5498f7637f86f8d766, type: 2}
   - {fileID: 11400000, guid: 7225146a77267dc4ea186e4d68dceeb1, type: 2}
+  - {fileID: 11400000, guid: 33c131f6c3d607f4fa802321e15cfe1c, type: 2}
   discard: []
   handManager: {fileID: 1042388538}
   deckCounter: {fileID: 1284747388}
