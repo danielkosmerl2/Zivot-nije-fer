@@ -9,7 +9,7 @@ public enum DamageType
 
 public enum Statuses
 {
-    Klasa
+    Klasa, Laplace
 }
 
 public class GameManager : MonoBehaviour
@@ -36,6 +36,10 @@ public class GameManager : MonoBehaviour
                 enemy.takeDamage("TB", amount);
                 break;
             case DamageType.Racunski:
+                if (statuses.Contains(Statuses.Laplace)) {
+                    amount *= 2;
+                    statuses.Remove(Statuses.Laplace);
+                }
                 enemy.takeDamage("RB", amount);
                 break;
             default:

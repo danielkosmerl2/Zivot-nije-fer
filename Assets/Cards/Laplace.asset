@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ca1278f67a35f479c72881ab8a4be1, type: 3}
+  m_Name: Laplace
+  m_EditorClassIdentifier: 
+  cardName: Laplaceova transformacija
+  description: "Sljede\u0107e ra\u010Dunsko rje\u0161enje rje\u0161ava dvostruko
+    vi\u0161e problema"
+  artwork: {fileID: 0}
+  background: {fileID: 21300000, guid: b91ce01a9fbb225419ba8500c1affe9f, type: 3}
+  cost: 1
+  effect: {fileID: 11400000, guid: 6aff06b7d7f3a0645bfa4b1881497468, type: 2}
