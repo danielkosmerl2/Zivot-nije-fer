@@ -553,7 +553,7 @@ MonoBehaviour:
   background: {fileID: 1013201318}
   enemy: {fileID: 1178380232}
   player: {fileID: 1021457377}
-  overlayPanel: {fileID: 1692967420}
+  overlayPanel: {fileID: 1278025876}
   endGameText: {fileID: 884508109}
   endGameBtn: {fileID: 58438065}
   deckManager: {fileID: 721916335}
@@ -4039,7 +4039,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 20
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4985,7 +4985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.41619873}
+  m_AnchoredPosition: {x: 0, y: -0.41622925}
   m_SizeDelta: {x: 0, y: -0.83276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934538217

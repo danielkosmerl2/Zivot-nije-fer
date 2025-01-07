@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Prespavaj
   m_EditorClassIdentifier: 
   cardName: Prespavaj
-  description: "+5 du\u0161evnog zdravlja"
+  description: "+2 du\u0161evnog zdravlja"
   artwork: {fileID: 21300000, guid: 9aae4f26448d898468ad1eb45a4e0a15, type: 3}
   background: {fileID: 21300000, guid: c2840b53d9acdb74592fbcdc4a2ebc7c, type: 3}
-  cost: 1
+  cost: 2
   effect: {fileID: 11400000, guid: b4fe9db428cb96f49ada194faa77e1a8, type: 2}
