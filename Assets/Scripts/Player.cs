@@ -9,6 +9,11 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI energyValue;
     public GameManager gameManager;
     public int maxEnergy = 3;
+
+    public void SetHealth(int amount)
+    {
+        healthValue.text = amount.ToString();
+    }
     
     public void UpdateHealth(int amount)
     {
