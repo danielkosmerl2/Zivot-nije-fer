@@ -7,6 +7,11 @@ public enum DamageType
     Programski, Racunski, Teorijski
 }
 
+public enum Statuses
+{
+    Klasa
+}
+
 public class GameManager : MonoBehaviour
 {
     public GameObject background;
@@ -16,11 +21,15 @@ public class GameManager : MonoBehaviour
     public GameObject endGameText;
     public GameObject endGameBtn;
     public DeckManager deckManager;
+    public List<Statuses> statuses;
     public void DamageEnemy(DamageType type, int amount)
     {
         switch (type)
         {
             case DamageType.Programski:
+                if (statuses.Contains(Statuses.Klasa)) {
+                    amount += 1;
+                }
                 enemy.takeDamage("PB", amount);
                 break;
             case DamageType.Teorijski:
@@ -44,6 +53,7 @@ public class GameManager : MonoBehaviour
     {
         player.UpdateHealth(-enemy.ECTS);
         player.UpdateEnergy(player.maxEnergy);
+        statuses.Remove(Statuses.Klasa);
     }
 
     public void endGame()

@@ -557,6 +557,7 @@ MonoBehaviour:
   endGameText: {fileID: 884508109}
   endGameBtn: {fileID: 58438065}
   deckManager: {fileID: 721916335}
+  statuses: 
 --- !u!1 &90234578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,6 +1453,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 52e3d8e0d223d2a4aa96aed9bbf0897c, type: 2}
   - {fileID: 11400000, guid: d331a41ad1ea670418923bfeeb76aec3, type: 2}
   - {fileID: 11400000, guid: fc1c61424e8438e4aba3ea4e949908ab, type: 2}
+  - {fileID: 11400000, guid: b701d1f8be56fc5498f7637f86f8d766, type: 2}
   discard: []
   handManager: {fileID: 1042388538}
   deckCounter: {fileID: 1284747388}
