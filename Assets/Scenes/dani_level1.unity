@@ -750,11 +750,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   background: {fileID: 1013201318}
   enemy: {fileID: 1178380232}
-  player: {fileID: 1021457377}
-  overlayPanel: {fileID: 1692967420}
-  endGameText: {fileID: 884508109}
-  endGameBtn: {fileID: 58438065}
-  deckManager: {fileID: 721916335}
+  player: {fileID: 0}
+  overlayPanel: {fileID: 0}
+  endGameText: {fileID: 0}
+  endGameBtn: {fileID: 0}
+  deckManager: {fileID: 0}
 --- !u!1 &90234578
 GameObject:
   m_ObjectHideFlags: 0
@@ -3591,7 +3591,7 @@ MonoBehaviour:
   playCardButton: {fileID: 736172706}
   overlayPanel: {fileID: 1692967420}
   handSize: 5
-  deckManager: {fileID: 721916335}
+  deckManager: {fileID: 0}
   gameManager: {fileID: 69269568}
 --- !u!1 &1059408395
 GameObject:
