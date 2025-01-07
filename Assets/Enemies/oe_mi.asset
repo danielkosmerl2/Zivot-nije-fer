@@ -9,8 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d6c4957203e69b41b3734f5fe21395d, type: 3}
-  m_Name: RB1
+  m_Script: {fileID: 11500000, guid: 976fe9eeed06f2e4d87cea898ae9c8fb, type: 3}
+  m_Name: oe_mi
   m_EditorClassIdentifier: 
-  amount: 1
-  type: 1
+  enemyName: "OE me\u0111uispit"
+  ects: 3
+  pb: 0
+  rb: 2
+  tb: 1
+  artwork: {fileID: 21300000, guid: a214dd9133663c341b696c5821a17393, type: 3}

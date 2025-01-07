@@ -9,8 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d6c4957203e69b41b3734f5fe21395d, type: 3}
-  m_Name: RB1
+  m_Script: {fileID: 11500000, guid: 976fe9eeed06f2e4d87cea898ae9c8fb, type: 3}
+  m_Name: oe_lab
   m_EditorClassIdentifier: 
-  amount: 1
-  type: 1
+  enemyName: OE labos
+  ects: 2
+  pb: 0
+  rb: 1
+  tb: 1
+  artwork: {fileID: 21300000, guid: 9d084dabefe29fd4dae31b38bd035c0e, type: 3}
