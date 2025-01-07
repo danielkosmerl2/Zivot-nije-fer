@@ -754,6 +754,7 @@ MonoBehaviour:
   overlayPanel: {fileID: 1692967420}
   endGameText: {fileID: 884508109}
   endGameBtn: {fileID: 58438065}
+  deckManager: {fileID: 721916335}
 --- !u!1 &90234578
 GameObject:
   m_ObjectHideFlags: 0

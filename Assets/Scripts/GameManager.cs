@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject overlayPanel;
     public GameObject endGameText;
     public GameObject endGameBtn;
+    public DeckManager deckManager;
     public void DamageEnemy(DamageType type, int amount)
     {
         switch (type)
